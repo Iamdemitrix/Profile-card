@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    <figure class="avatar-section">
+      <a href="https://imgur.com/a/T0JMRMn" target="_blank">
+        <img src="img/daniel.jpg" alt="Demitrix Avatar" data-testid="test-user-avatar">
+      </a>
+    </figure>
+
+    <div class="profile-content">
+      <header>
+        <h2 data-testid="test-user-name">Daniel Adesanya</h2>
+      </header>
+
+      <p data-testid="test-user-bio">
+        I'm a Computer science student, passionate about cybersecurity, web development, and system design.
+      </p>
+
+      <p>
+        Current Time (ms): 
+        <span data-testid="test-user-time" id="user-time"></span>
+      </p>
+
+      <nav data-testid="test-user-social-links" class="social-links">
+        <ul>
+          <li><a href="https://x.com/cybernielle" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+          <li><a href="https://github.com/iamdemitrix" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+        </ul>
+      </nav>
+
+      <section data-testid="test-user-hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Learning new technologies</li>
+          <li>Workout</li>
+          <li>Music</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-user-dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>Procrastination</li>
+          <li>Disorganization</li>
+          <li>Dishonesty</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
